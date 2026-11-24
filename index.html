@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollos Roly | Pollería & Sabor</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de FontAwesome opcional para carrito e íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO  -->
+    <header class="header">
+        <div class="logo">
+            <h1>Pollos Roly</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#promociones">Promociones</a>
+            <a href="#contacto">Ubicación</a>
+        </nav>
+        <div class="cart-icon" id="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN PRINCIPAL -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>El verdadero sabor a la brasa en tu mesa</h2>
+            <p>Crujiente, jugoso y lleno de sabor.</p>
+            <a href="#menu" class="btn-primary">Ver Menú y Pedir</a>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN DE MENÚ Y FILTROS -->
+    <section id="menu" class="menu-section">
+        <h2>Nuestro Menú</h2>
+        
+        <!--Botones de Filtro y Categorías-->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="pollos">Pollos a la Brasa</button>
+            <button class="filter-btn" data-filter="Harmuguesa">Harmuguesa</button>
+            <button class="filter-btn" data-filter="salchipapas">Salchipapas</button>
+            <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+        </div>
+
+        <!--Contenedor de las Tarjetas de Comida Grid-->
+        <div class="menu-grid" id="menu-grid">
+            <!--Producto 1-->
+            <div class="menu-card" data-category="pollos">
+                <img src="imagenes/Pollo entero.png" alt="Pollo Entero">
+                <div class="card-info">
+                    <h3>Pollo Entero a la Brasa</h3>
+                    <p>Arroz, Papas crujientes y Fideos Salteados.</p>
+                    <span class="price">Bs. 65.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+             <!--Producto 2-->
+            <div class="menu-card" data-category="pollos">
+                <img src="imagenes/Economico.png" alt="Economico">
+                <div class="card-info">
+                    <h3>Pollo Económico</h3>
+                    <p>Arroz, Papas crujientes y Fideos Salteados.</p>
+                    <span class="price">Bs. 18.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+             <!--Producto 3-->
+            <div class="menu-card" data-category="pollos">
+                <img src="imagenes/Cuato de pollo.png" alt="Cuarto de Pollo">
+                <div class="card-info">
+                    <h3>Cuarto de pollo </h3>
+                    <p>Arroz, Papas crujientes y Fideos Salteados.</p>
+                    <span class="price">Bs. 25.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <!--Producto 4 -->
+            <div class="menu-card" data-category="Harmuguesa">
+                <img src="imagenes/Hamurguesa.png" alt="Harmuguesa">
+                <div class="card-info">
+                    <h3>Harmuguesa</h3>
+                    <p>Deliciosa harmuguesa con pan y salsas.</p>
+                    <span class="price">Bs. 20.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="menu-card" data-category="salchipapas">
+                <img src="imagenes/Salchipapa.png" alt="Salchipapa Callejera">
+                <div class="card-info">
+                    <h3>Salchipapa Callejera</h3>
+                    <p>Papas crujientes con salchichas.</p>
+                    <span class="price">Bs. 20.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="menu-card" data-category="bebidas">
+                <img src="imagenes/Coca cola 2L.jpg" alt="Gaseosa 2L">
+                <div class="card-info">
+                    <h3>Coca Cola 2L</h3>
+                    <p>Refresco de cola bien helado para compartir.</p>
+                    <span class="price">Bs. 12.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <!-- Producto 6-->
+            <div class="menu-card" data-category="bebidas">
+                <img src="imagenes/Fanta Naranja 2L.jpg" alt="Gaseosa 2L">
+                <div class="card-info">
+                    <h3>fanta 2L</h3>
+                    <p>Refresco de naranja bien helado para compartir.</p>
+                    <span class="price">Bs. 12.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+            <!-- Producto 7-->
+            <div class="menu-card" data-category="bebidas">
+                <img src="imagenes/Sprint 2L.jpg" alt="Gaseosa 2L">
+                <div class="card-info">
+                    <h3>Sprit 2L</h3>
+                    <p>Refresco de limon bien helado para compartir.</p>
+                    <span class="price">Bs. 12.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+             <!-- Producto 8-->
+            <div class="menu-card" data-category="bebidas">
+                <img src="imagenes/Tropi de 2L.jpg" alt="Gaseosa 2L">
+                <div class="card-info">
+                    <h3>Tropi de Naranja 1L</h3>
+                    <p>Refresco de naranja bien helado para compartir.</p>
+                    <span class="price">Bs. 10.00</span>
+                    <button class="btn-add">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- 4. MODAL / CARRITO DE COMPRAS FLOTANTE -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart" id="close-cart">&times;</span>
+            <h2>Tu Carrito de Pedidos</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Los elementos agregados aparecerán aquí dinámicamente con JS -->
+                <p class="empty-msg">Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="total-price">Bs. 0.00</span></h3>
+            </div>
+            <div class="checkout-form">
+                <input type="text" id="client-name" placeholder="Tu Nombre y Apellido">
+                <input type="text" id="client-address" placeholder="Dirección de Entrega / Referencia">
+                <button id="checkout-whatsapp" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Enviar Pedido a WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. FOOTER / UBICACIÓN -->
+    <footer id="contacto" class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Pollos Roly</h3>
+                <p>El mejor sabor callejero para comer hasta los huesos .</p>
+            </div>
+            <div>
+                <h4>Horarios medio dia </h4>
+                <p>Lunes a Domingo: 11:00 AM - 15:00 PM </p>
+                <h5>Horarios de noche  </h5>
+                <p>Lunes a Domingo: 18:00 PM - 23:00 PM </p>
+            </div>
+            <div>
+                <h4>Ubicación</h4>
+                <p>Av. Bolivia , Zona Sur</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pollos Roly</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo de lógica JavaScript -->
+    <script src="diseño.js"></script>
+</body>
+</html>
